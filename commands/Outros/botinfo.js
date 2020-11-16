@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed, version } = require("discord.js");
 const config = require("../../Structures/jsons/config.json");
 const os = require("os");
 const API = require("../../Structures/extensions/utils")
@@ -19,8 +19,8 @@ module.exports.run = async (bot, message, args, idioma) => {
     embed.setColor(config.color)
 	embed.setTimestamp()
     embed.addFields(
-        { name: idioma.botinfo.versão, value: `\`\`\`${config.versão}\`\`\``, inline: true },
-        { name: "Discord.js", value: `\`\`\`12.2.2\`\`\``, inline: true },
+        { name: idioma.botinfo.versão, value: `\`\`\`${version}\`\`\``, inline: true },
+        { name: "Discord.js", value: `\`\`\`${Discord.\`\`\``, inline: true },
         { name: "Uptime", value: `\`\`\`${API.time2(bot.uptime)}\`\`\``, inline: true },
         { name: "Ping", value: `\`\`\`${bot.ws.ping}ms\`\`\``, inline: true },
         { name: idioma.botinfo.ram, value: `\`\`\`${API.bytes(total_memoria).value}${API.bytes(total_memoria).unit}/${API.bytes(os.totalmem()).value}${API.bytes(os.totalmem()).unit}\`\`\``, inline: true },
